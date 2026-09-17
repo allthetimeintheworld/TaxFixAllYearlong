@@ -37,7 +37,14 @@ demo: data
 	@$(MAKE) --no-print-directory open
 	@echo ""
 	@echo "  Taxfix Loop is running at $(URL)"
-	@echo "  Deep links:  $(URL)/?replay=1   $(URL)/?answer=scared   $(URL)/?repair=mostly-freelance"
+	@echo "    $(URL)/            landing page"
+	@echo "    $(URL)/app.html    the three-screen prototype"
+	@echo ""
+	@echo "  Straight to a moment:"
+	@echo "    $(URL)/app.html?replay=1                  watch the agents work"
+	@echo "    $(URL)/app.html?answer=scared#ask         humour switches off"
+	@echo "    $(URL)/app.html?repair=mostly-freelance   the repair loop, answered"
+	@echo ""
 	@echo "  Stop with:   make stop"
 	@echo ""
 

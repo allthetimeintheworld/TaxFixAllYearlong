@@ -1,0 +1,66 @@
+/* ============================================================================
+   Taxfix Loop — concept prototype
+   Visual system aligned to the palette published on taxfix.com:
+
+     #154618  primary green   (their MuiButton-base background)
+     #36893B  interactive green / hover
+     #ADEE68  accent lime     (their MuiButton-primary background)
+     #CEF5A4  lime tint       (button ripple)
+     #ECFFC7  lightest lime
+     #FDF8F2  page background
+     #EAE0D7  sand borders
+     #0C0B0A  body text
+     #9A9288  secondary text
+
+   Their UI carries no red and no blue, so state is signalled with amber
+   rather than alarm red — which suits a product whose job is to lower anxiety.
+   ========================================================================= */
+
+:root {
+  /* palette — sampled from the live taxfix.com stylesheet */
+  --canvas:        #FDF8F2;
+  --paper:         #FFFFFF;
+  --paper-soft:    #FBF4EC;
+  --ink:           #0C0B0A;
+  --ink-soft:      #4A443E;
+  --ink-faint:     #9A9288;
+
+  --forest-900:    #0E3211;
+  --forest-800:    #154618;  /* taxfix primary */
+  --forest-700:    #1D5A20;
+  --forest-600:    #36893B;  /* taxfix hover */
+
+  --lime-400:      #ADEE68;  /* taxfix accent */
+  --lime-300:      #CEF5A4;  /* taxfix lime tint */
+  --lime-100:      #ECFFC7;  /* taxfix lightest lime */
+
+  /* "needs you" / attention — deliberately warm, not alarming */
+  --sun-700:       #8A5A14;
+  --sun-600:       #B8791C;
+  --sun-500:       #DE9A2E;
+  --sun-100:       #FDF1DC;
+  --sun-50:        #FEF8EC;
+
+  --line:          #EAE0D7;  /* taxfix sand */
+  --line-strong:   #DCD0C4;
+
+  /* geometry */
+  --r-xs: 10px;
+  --r-sm: 14px;
+  --r-md: 20px;
+  --r-lg: 28px;
+  --r-xl: 36px;
+  --r-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(12, 11, 10, .04), 0 2px 8px rgba(12, 11, 10, .045);
+  --shadow-md: 0 2px 6px rgba(12, 11, 10, .05), 0 12px 28px rgba(12, 11, 10, .07);
+  --shadow-lg: 0 8px 24px rgba(12, 11, 10, .08), 0 32px 64px rgba(12, 11, 10, .10);
+
+  /* Taxfix use ABC Rom (licensed); this is a system stand-in, not their font. */
+  --font: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont,
+          "Segoe UI Variable", "Segoe UI", Inter, system-ui, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  --ease: cubic-bezier(.22, .61, .36, 1);
+  --ease-out-back: cubic-bezier(.34, 1.4, .64, 1);
+}

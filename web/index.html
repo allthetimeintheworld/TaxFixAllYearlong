@@ -4,216 +4,257 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Taxfix Loop — Feel ready before tax season arrives</title>
-<meta name="description" content="Taxfix Loop — a calm, year-round tax preparation companion. Multi-agent concept prototype." />
-<link rel="stylesheet" href="styles.css" />
+<meta name="description" content="Taxfix Loop turns each confusing tax moment into one understandable action. A multi-agent concept prototype — nine specialist agents, visible reasoning, no judgement." />
+<link rel="stylesheet" href="tokens.css" />
+<link rel="stylesheet" href="landing.css" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧾</text></svg>" />
 </head>
-<body data-screen="today">
+<body>
 
-  <div class="ambient" aria-hidden="true">
-    <span class="blob blob-a"></span>
-    <span class="blob blob-b"></span>
-    <span class="blob blob-c"></span>
-  </div>
+<div class="ambient" aria-hidden="true">
+  <span class="blob blob-a"></span>
+  <span class="blob blob-b"></span>
+</div>
 
-  <div class="stage">
+<!-- ─────────────────────────────── nav ─────────────────────────────── -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top">
+    <span class="brand-mark" aria-hidden="true">🧾</span>
+    <span class="brand-name">Taxfix <em>Loop</em></span>
+  </a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#story">The story</a>
+    <a href="#team">The team</a>
+    <a href="#moment">The moment</a>
+    <a href="#honesty">Honesty</a>
+  </nav>
+  <a class="btn btn-primary nav-cta" href="app.html">Open the prototype</a>
+</header>
 
-    <!-- ──────────────────────────── device ──────────────────────────── -->
-    <main class="device" id="device">
+<main id="top">
 
-      <header class="topbar">
-        <div class="brand">
-          <span class="brand-mark" aria-hidden="true">🧾</span>
-          <span class="brand-name">Taxfix <em>Loop</em></span>
+  <!-- ───────────────────────────── hero ───────────────────────────── -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Concept prototype · Taxfix Hackathon Berlin</p>
+      <h1>Feel ready <span class="hl">before</span> tax season arrives.</h1>
+      <p class="lede">
+        Alex is good with technology but avoids taxes, because every document feels like
+        evidence of not knowing enough. Taxfix Loop turns each confusing moment into
+        <strong>one understandable action</strong>.
+      </p>
+      <p class="lede lede-sub">
+        The agents do not take control away from Alex. They make Alex feel capable of
+        taking it.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary btn-lg" href="app.html">Open the prototype <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost btn-lg" href="#story">See how it works</a>
+      </div>
+      <ul class="hero-facts">
+        <li><strong>9</strong> specialist agents</li>
+        <li><strong>94</strong> knowledge chunks</li>
+        <li><strong>28</strong> acceptance checks</li>
+        <li><strong>0</strong> dependencies</li>
+      </ul>
+    </div>
+
+    <!-- A live, scaled-down instance of the real app — not a screenshot. -->
+    <div class="hero-visual">
+      <div class="phone" role="img" aria-label="The Taxfix Loop prototype running on a phone">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-screen">
+          <iframe src="app.html" title="Taxfix Loop prototype" loading="lazy" scrolling="no" tabindex="-1"></iframe>
         </div>
-        <button class="readiness-pill" id="readinessPill" type="button" aria-label="Tax readiness">
-          <span class="readiness-pill-value" id="pillValue">62%</span>
-          <span class="readiness-pill-label">ready</span>
-        </button>
-      </header>
+        <div class="phone-home" aria-hidden="true"></div>
+      </div>
+      <p class="phone-caption"><span class="live-dot" aria-hidden="true"></span> Live — the real prototype, running</p>
+    </div>
+  </section>
 
-      <div class="screens" id="screens">
+  <!-- ───────────────────────────── story ───────────────────────────── -->
+  <section class="section" id="story">
+    <p class="eyebrow">The shift</p>
+    <h2 class="section-h2">The product is not the refund. It is the sentence Alex can say afterwards.</h2>
 
-        <!-- ═══════════════════════ 1 · TODAY ═══════════════════════ -->
-        <section class="screen is-active" id="screen-today" aria-label="Today">
-          <div class="screen-scroll">
+    <div class="shift">
+      <div class="shift-card shift-before">
+        <p class="shift-quote">“I don’t know what any of this means.”</p>
+        <div class="shift-meta"><span>Confidence</span><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><strong>2/5</strong></div>
+      </div>
+      <div class="shift-arrow" aria-hidden="true">→</div>
+      <div class="shift-card shift-after">
+        <p class="shift-quote">“I know what to do next.”</p>
+        <div class="shift-meta"><span>Confidence</span><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><strong>4/5</strong></div>
+      </div>
+    </div>
 
-            <p class="greeting" id="greeting">Good morning, Alex 👋</p>
-            <h1 class="headline">You are <span class="hl">62%</span> ready for tax season.</h1>
+    <div class="loop">
+      <article class="loop-step">
+        <span class="loop-num">1</span>
+        <h3>Three minutes a month</h3>
+        <p>Five plain questions. Did your job change, did you start freelancing, did you move, did you buy something for work, did a letter arrive?</p>
+      </article>
+      <article class="loop-step">
+        <span class="loop-num">2</span>
+        <h3>One action, never ten</h3>
+        <p>The Planner holds a backlog, but surfaces exactly one next best action — with a sentence explaining why it matters.</p>
+      </article>
+      <article class="loop-step">
+        <span class="loop-num">3</span>
+        <h3>Readiness you can explain</h3>
+        <p>Twelve weighted items, summing to 100. Every point is attached to something you did — nothing to refund size or filing speed.</p>
+      </article>
+    </div>
+  </section>
 
-            <div class="card readiness-card">
-              <div class="ring-wrap">
-                <svg class="ring" viewBox="0 0 140 140" role="img" aria-labelledby="ringLabel">
-                  <circle class="ring-track" cx="70" cy="70" r="58" />
-                  <circle class="ring-fill" id="ringFill" cx="70" cy="70" r="58" />
-                </svg>
-                <div class="ring-centre">
-                  <span class="ring-value" id="ringValue">62</span>
-                  <span class="ring-unit">%</span>
-                  <span class="ring-label" id="ringLabel">On track</span>
-                </div>
-              </div>
+  <!-- ───────────────────────────── team ───────────────────────────── -->
+  <section class="section section-alt" id="team">
+    <p class="eyebrow">The AI team</p>
+    <h2 class="section-h2">Nine specialists in two rings, over one shared blackboard.</h2>
+    <p class="section-lede">
+      Agents never call each other. They write artefacts, and an orchestrator sequences them —
+      which is why the AI Team screen is an honest record of what happened, not an animation.
+    </p>
 
-              <div class="readiness-copy">
-                <p class="readiness-line" id="readinessLine">
-                  Nothing here is about how much money you might get back. It counts what you have
-                  already prepared.
-                </p>
-                <button class="link-btn" id="whyScoreBtn" type="button" aria-expanded="false">
-                  Why <span id="whyScoreWord">62</span>%? <span class="chev" aria-hidden="true">▾</span>
-                </button>
-                <ul class="why-list" id="whyList" hidden></ul>
-              </div>
-            </div>
-
-            <div class="wins" id="wins"></div>
-
-            <h2 class="section-title">Next best action</h2>
-            <article class="card action-card" id="nextActionCard"></article>
-
-            <div class="card repair-card" id="repairCard" hidden></div>
-
-            <div class="card outcome-card" id="outcomeCard" hidden></div>
-
-            <h2 class="section-title">Your AI tax team</h2>
-            <div class="card team-strip" id="teamStrip"></div>
-
-            <div class="card control-card">
-              <label class="control-row">
-                <input type="checkbox" id="controlToggle" checked />
-                <span class="control-box" aria-hidden="true"></span>
-                <span class="control-text">
-                  <strong>You’re in control.</strong>
-                  I prepare, explain and check. Nothing is submitted without you.
-                </span>
-              </label>
-              <button class="submit-btn" id="submitBtn" type="button" disabled>
-                Submit my return
-                <span class="submit-hint">You press this — not me</span>
-              </button>
-            </div>
-
-            <div class="card emotional-card">
-              <p class="emotional-before">“I don’t know what any of this means.”</p>
-              <div class="emotional-arrow" aria-hidden="true">↓</div>
-              <p class="emotional-after">“I know what to do next.”</p>
-              <div class="confidence-row" id="confidenceRow"></div>
-            </div>
-
-            <h2 class="section-title">💡 Did you know?</h2>
-            <article class="card tip-card" id="tipCard"></article>
-
-          </div>
-        </section>
-
-        <!-- ═══════════════════════ 2 · AI TEAM ═══════════════════════ -->
-        <section class="screen" id="screen-team" aria-label="AI Team">
-          <div class="screen-scroll">
-
-            <h1 class="screen-title">Taxfix Loop AI Team</h1>
-            <p class="screen-sub" id="teamSub"></p>
-
-            <div class="metrics-row" id="metricsRow"></div>
-
-            <div class="card replay-bar">
-              <div class="replay-copy">
-                <strong id="replayStatus">Ready to replay</strong>
-                <span id="replayHint">Watch the team work through the brief, step by step.</span>
-              </div>
-              <button class="btn btn-primary" id="replayBtn" type="button">▶ Replay</button>
-            </div>
-
-            <div class="filter-row" id="filterRow"></div>
-
-            <ol class="timeline" id="timeline"></ol>
-
-            <div id="teamExtras"></div>
-
-          </div>
-        </section>
-
-        <!-- ═══════════════════════ 3 · ASK ═══════════════════════ -->
-        <section class="screen" id="screen-ask" aria-label="Ask">
-          <div class="screen-scroll">
-
-            <h1 class="screen-title">Ask anything about your taxes</h1>
-            <p class="screen-sub">
-              We’ll explain it like a human, without judging you. There is no question here
-              that is too basic.
-            </p>
-
-            <div class="ask-chips" id="askChips"></div>
-
-            <form class="ask-box" id="askForm">
-              <input
-                type="text"
-                id="askInput"
-                placeholder="e.g. Is a new laptop worth claiming?"
-                autocomplete="off"
-                aria-label="Ask a tax question"
-              />
-              <button class="btn btn-primary" type="submit">Ask</button>
-            </form>
-
-            <div id="answerArea"></div>
-
-          </div>
-        </section>
-
+    <div class="rings">
+      <div class="ring-group">
+        <p class="ring-label">Product ring — decides what to build, and for whom</p>
+        <div class="agent-grid">
+          <article class="agent"><span class="agent-emoji">🎯</span><h3>Product Expert</h3><p>Target-user fit, goals, and an explicit list of what we will not build.</p></article>
+          <article class="agent"><span class="agent-emoji">🔎</span><h3>Deep Research</h3><p>Target-group trends turned into product opportunities, each with a confidence level.</p></article>
+          <article class="agent"><span class="agent-emoji">🎨</span><h3>Frontend Designer</h3><p>Screen hierarchy, states and copy — so the product reads in five seconds.</p></article>
+        </div>
       </div>
 
-      <nav class="tabbar" id="tabbar" aria-label="Main">
-        <button class="tab is-active" data-target="today" type="button">
-          <span class="tab-icon" aria-hidden="true">◎</span><span class="tab-label">Today</span>
-        </button>
-        <button class="tab" data-target="team" type="button">
-          <span class="tab-icon" aria-hidden="true">✦</span><span class="tab-label">AI Team</span>
-          <span class="tab-badge" id="teamBadge">9</span>
-        </button>
-        <button class="tab" data-target="ask" type="button">
-          <span class="tab-icon" aria-hidden="true">💬</span><span class="tab-label">Ask</span>
-        </button>
-      </nav>
-
-      <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    </main>
-
-    <!-- ──────────────────────────── stage rail ──────────────────────────── -->
-    <aside class="rail" aria-label="Prototype notes">
-      <div class="rail-block">
-        <p class="rail-kicker">Concept prototype</p>
-        <h2 class="rail-title">Taxfix Loop</h2>
-        <p class="rail-tagline">Feel ready before tax season arrives.</p>
-        <p class="rail-body">
-          Nine specialist agents over one shared blackboard, grounded in a synthetic
-          knowledge base. Every sentence on screen can be traced to a source.
-        </p>
+      <div class="ring-group">
+        <p class="ring-label">Tax ring — does the actual work for Alex</p>
+        <div class="agent-grid">
+          <article class="agent"><span class="agent-emoji">🔍</span><h3>Document Detective</h3><p>Names each document, and marks what is still unconfirmed instead of guessing.</p></article>
+          <article class="agent"><span class="agent-emoji">🗺️</span><h3>Tax Planner</h3><p>Owns the readiness score and the single next action. Keeps the list finishable.</p></article>
+          <article class="agent"><span class="agent-emoji">💬</span><h3>ELI5 Specialist</h3><p>Answers in four layers, without judgement. Honest when it does not know.</p></article>
+        </div>
       </div>
 
-      <div class="rail-block">
-        <p class="rail-kicker">Try this</p>
-        <ol class="rail-steps">
-          <li><strong>Today</strong> → tap the laptop action, watch readiness move 62 → 78.</li>
-          <li><strong>AI Team</strong> → replay, then read the rejected joke and its rewrite.</li>
-          <li><strong>Ask</strong> → “Did I mess up?” then try “I’m scared I’ll get fined.”</li>
-        </ol>
+      <div class="ring-group">
+        <p class="ring-label">Quality ring — makes the product worse before Alex sees it</p>
+        <div class="agent-grid">
+          <article class="agent"><span class="agent-emoji">⚔️</span><h3>Adversarial Reviewer</h3><p>Attacks the concept and the copy — then re-attacks the rewrite, and can reject it again.</p></article>
+          <article class="agent"><span class="agent-emoji">🛡️</span><h3>Trust Check</h3><p>A real scanner that blocks unsupported promises. Holds confidence while a conflict is open.</p></article>
+          <article class="agent"><span class="agent-emoji">🕊️</span><h3>Brand Guardian</h3><p>Rewrites copy and runs a seven-rule checklist. Switches humour off when it would hurt.</p></article>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="rail-block rail-run" id="railRun"></div>
+  <!-- ───────────────────────────── moment ───────────────────────────── -->
+  <section class="section" id="moment">
+    <p class="eyebrow">The moment</p>
+    <h2 class="section-h2">A joke the system refused to tell.</h2>
+    <p class="section-lede">
+      Humour lowers anxiety — until it makes a promise the system cannot keep.
+      This is the whole governance story in one interaction.
+    </p>
 
-      <div class="rail-block rail-legend">
-        <p class="rail-kicker">Honest labels</p>
+    <div class="moment-flow">
+      <div class="moment-card moment-proposed">
+        <p class="moment-k">Copy draft</p>
+        <p class="moment-text">💻 Your computer is getting slow… this year you get it back!</p>
+      </div>
+      <div class="moment-arrow" aria-hidden="true">↓</div>
+      <div class="moment-card moment-rejected">
+        <p class="moment-k">⚔️ Adversarial Reviewer — rejected, High severity</p>
+        <p class="moment-text">Promises an outcome the system cannot know. “You get it back” implies the full purchase price returns. Alex is anxious about being wrong — an unkept promise is the fastest way to confirm that fear.</p>
+      </div>
+      <div class="moment-arrow" aria-hidden="true">↓</div>
+      <div class="moment-card moment-rewritten">
+        <p class="moment-k">🕊️ Brand Guardian — cleared, 4/7 → 7/7 rules passing</p>
+        <p class="moment-text">💻 New computer for work? It may be relevant for your taxes. Save the receipt and tell us how you use it before we celebrate.</p>
+      </div>
+    </div>
+
+    <div class="moment-stats">
+      <div class="stat"><span class="stat-v">8</span><span class="stat-k">banned promise patterns, enforced in code</span></div>
+      <div class="stat"><span class="stat-v">6</span><span class="stat-k">distress signals that disable humour</span></div>
+      <div class="stat"><span class="stat-v">7</span><span class="stat-k">tone rules run on every rewrite</span></div>
+      <div class="stat"><span class="stat-v">100%</span><span class="stat-k">of shown claims trace to a source</span></div>
+    </div>
+  </section>
+
+  <!-- ───────────────────────────── honesty ───────────────────────────── -->
+  <section class="section section-alt" id="honesty">
+    <p class="eyebrow">Honesty</p>
+    <h2 class="section-h2">What this is, and what it is not.</h2>
+    <div class="honesty-grid">
+      <div class="honesty-col honesty-is">
+        <h3>It is</h3>
         <ul>
-          <li>Synthetic data — no real person, employer or amount.</li>
-          <li>Not tax advice and not an official Taxfix knowledge base.</li>
-          <li>Rules are demo-only; a real product needs verified sources.</li>
+          <li>A working multi-agent prototype you can run offline</li>
+          <li>Grounded: every sentence traces to a knowledge-base section</li>
+          <li>Deterministic — the demo cannot fail on stage</li>
+          <li>Coloured from the palette taxfix.com actually serves</li>
         </ul>
       </div>
-    </aside>
+      <div class="honesty-col honesty-isnot">
+        <h3>It is not</h3>
+        <ul>
+          <li>Tax advice, or an official Taxfix knowledge base</li>
+          <li>Real data — every person, company and amount is invented</li>
+          <li>LLM-backed — the agents retrieve and compose, they do not reason</li>
+          <li>An official brand guideline</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  </div>
+  <!-- ───────────────────────────── footer ───────────────────────────── -->
+  <footer class="footer">
+    <h2 class="footer-h2">Feel ready before tax season arrives.</h2>
+    <div class="hero-ctas footer-ctas">
+      <a class="btn btn-primary btn-lg" href="app.html">Open the prototype <span aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost btn-lg" href="app.html?answer=scared#ask">Try the sensitive-mode answer</a>
+    </div>
+    <p class="footer-meta">
+      Concept prototype · synthetic data · not tax advice ·
+      <a href="app.html?replay=1#team">replay the agent run</a>
+    </p>
+  </footer>
 
-  <script src="data/run.js"></script>
-  <script src="app.js"></script>
+</main>
+
+<script>
+// The app moved from / to /app.html. Keep older deep links working by
+// forwarding prototype state to the app rather than dropping it.
+(function () {
+  var p = new URLSearchParams(location.search);
+  var keys = ['replay', 'repair', 'answer'];
+  var carried = keys.filter(function (k) { return p.has(k); });
+  var hash = location.hash;
+  var appHash = (hash === '#team' || hash === '#ask' || hash === '#today');
+  if (carried.length || appHash) {
+    var qs = carried.map(function (k) { return k + '=' + encodeURIComponent(p.get(k)); }).join('&');
+    location.replace('app.html' + (qs ? '?' + qs : '') + (appHash ? hash : ''));
+  }
+})();
+
+// Reveal sections on scroll, and mark the nav once the page moves.
+(function () {
+  var nav = document.getElementById('nav');
+  var onScroll = function () { nav.classList.toggle('is-stuck', window.scrollY > 12); };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -12% 0px' });
+  document.querySelectorAll('.section, .loop-step, .agent, .moment-card, .stat').forEach(function (el) {
+    el.classList.add('reveal');
+    io.observe(el);
+  });
+})();
+</script>
 </body>
 </html>

@@ -36,6 +36,8 @@ const server = createServer(async (req, res) => {
     const url = new URL(req.url, `http://${req.headers.host}`);
     let pathname = decodeURIComponent(url.pathname);
     if (pathname === '/') pathname = '/index.html';
+    // Friendly aliases, so a presenter can type /app or /prototype.
+    if (pathname === '/app' || pathname === '/prototype') pathname = '/app.html';
 
     // Prevent path traversal outside web/.
     const safe = normalize(pathname).replace(/^(\.\.[/\\])+/, '');
