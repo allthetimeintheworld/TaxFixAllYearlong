@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Taxfix Loop — Feel ready before tax season arrives</title>
+<meta name="description" content="Taxfix Loop — a calm, year-round tax preparation companion. Multi-agent concept prototype." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧾</text></svg>" />
+</head>
+<body data-screen="today">
+
+  <div class="ambient" aria-hidden="true">
+    <span class="blob blob-a"></span>
+    <span class="blob blob-b"></span>
+    <span class="blob blob-c"></span>
+  </div>
+
+  <div class="stage">
+
+    <!-- ──────────────────────────── device ──────────────────────────── -->
+    <main class="device" id="device">
+
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">🧾</span>
+          <span class="brand-name">Taxfix <em>Loop</em></span>
+        </div>
+        <button class="readiness-pill" id="readinessPill" type="button" aria-label="Tax readiness">
+          <span class="readiness-pill-value" id="pillValue">62%</span>
+          <span class="readiness-pill-label">ready</span>
+        </button>
+      </header>
+
+      <div class="screens" id="screens">
+
+        <!-- ═══════════════════════ 1 · TODAY ═══════════════════════ -->
+        <section class="screen is-active" id="screen-today" aria-label="Today">
+          <div class="screen-scroll">
+
+            <p class="greeting" id="greeting">Good morning, Alex 👋</p>
+            <h1 class="headline">You are <span class="hl">62%</span> ready for tax season.</h1>
+
+            <div class="card readiness-card">
+              <div class="ring-wrap">
+                <svg class="ring" viewBox="0 0 140 140" role="img" aria-labelledby="ringLabel">
+                  <defs>
+                    <linearGradient id="ringGrad" x1="0" y1="1" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#0B3B2E" />
+                      <stop offset="55%" stop-color="#1F7A5A" />
+                      <stop offset="100%" stop-color="#4FBF8F" />
+                    </linearGradient>
+                  </defs>
+                  <circle class="ring-track" cx="70" cy="70" r="58" />
+                  <circle class="ring-fill" id="ringFill" cx="70" cy="70" r="58" />
+                </svg>
+                <div class="ring-centre">
+                  <span class="ring-value" id="ringValue">62</span>
+                  <span class="ring-unit">%</span>
+                  <span class="ring-label" id="ringLabel">On track</span>
+                </div>
+              </div>
+
+              <div class="readiness-copy">
+                <p class="readiness-line" id="readinessLine">
+                  Nothing here is about how much money you might get back. It counts what you have
+                  already prepared.
+                </p>
+                <button class="link-btn" id="whyScoreBtn" type="button" aria-expanded="false">
+                  Why <span id="whyScoreWord">62</span>%? <span class="chev" aria-hidden="true">▾</span>
+                </button>
+                <ul class="why-list" id="whyList" hidden></ul>
+              </div>
+            </div>
+
+            <div class="wins" id="wins"></div>
+
+            <h2 class="section-title">Next best action</h2>
+            <article class="card action-card" id="nextActionCard"></article>
+
+            <div class="card repair-card" id="repairCard" hidden></div>
+
+            <div class="card outcome-card" id="outcomeCard" hidden></div>
+
+            <h2 class="section-title">Your AI tax team</h2>
+            <div class="card team-strip" id="teamStrip"></div>
+
+            <div class="card control-card">
+              <label class="control-row">
+                <input type="checkbox" id="controlToggle" checked />
+                <span class="control-box" aria-hidden="true"></span>
+                <span class="control-text">
+                  <strong>You’re in control.</strong>
+                  I prepare, explain and check. Nothing is submitted without you.
+                </span>
+              </label>
+              <button class="submit-btn" id="submitBtn" type="button" disabled>
+                Submit my return
+                <span class="submit-hint">You press this — not me</span>
+              </button>
+            </div>
+
+            <div class="card emotional-card">
+              <p class="emotional-before">“I don’t know what any of this means.”</p>
+              <div class="emotional-arrow" aria-hidden="true">↓</div>
+              <p class="emotional-after">“I know what to do next.”</p>
+              <div class="confidence-row" id="confidenceRow"></div>
+            </div>
+
+            <h2 class="section-title">💡 Did you know?</h2>
+            <article class="card tip-card" id="tipCard"></article>
+
+          </div>
+        </section>
+
+        <!-- ═══════════════════════ 2 · AI TEAM ═══════════════════════ -->
+        <section class="screen" id="screen-team" aria-label="AI Team">
+          <div class="screen-scroll">
+
+            <h1 class="screen-title">Taxfix Loop AI Team</h1>
+            <p class="screen-sub" id="teamSub"></p>
+
+            <div class="metrics-row" id="metricsRow"></div>
+
+            <div class="card replay-bar">
+              <div class="replay-copy">
+                <strong id="replayStatus">Ready to replay</strong>
+                <span id="replayHint">Watch the team work through the brief, step by step.</span>
+              </div>
+              <button class="btn btn-primary" id="replayBtn" type="button">▶ Replay</button>
+            </div>
+
+            <div class="filter-row" id="filterRow"></div>
+
+            <ol class="timeline" id="timeline"></ol>
+
+            <div id="teamExtras"></div>
+
+          </div>
+        </section>
+
+        <!-- ═══════════════════════ 3 · ASK ═══════════════════════ -->
+        <section class="screen" id="screen-ask" aria-label="Ask">
+          <div class="screen-scroll">
+
+            <h1 class="screen-title">Ask anything about your taxes</h1>
+            <p class="screen-sub">
+              We’ll explain it like a human, without judging you. There is no question here
+              that is too basic.
+            </p>
+
+            <div class="ask-chips" id="askChips"></div>
+
+            <form class="ask-box" id="askForm">
+              <input
+                type="text"
+                id="askInput"
+                placeholder="e.g. Is a new laptop worth claiming?"
+                autocomplete="off"
+                aria-label="Ask a tax question"
+              />
+              <button class="btn btn-primary" type="submit">Ask</button>
+            </form>
+
+            <div id="answerArea"></div>
+
+          </div>
+        </section>
+
+      </div>
+
+      <nav class="tabbar" id="tabbar" aria-label="Main">
+        <button class="tab is-active" data-target="today" type="button">
+          <span class="tab-icon" aria-hidden="true">◎</span><span class="tab-label">Today</span>
+        </button>
+        <button class="tab" data-target="team" type="button">
+          <span class="tab-icon" aria-hidden="true">✦</span><span class="tab-label">AI Team</span>
+          <span class="tab-badge" id="teamBadge">9</span>
+        </button>
+        <button class="tab" data-target="ask" type="button">
+          <span class="tab-icon" aria-hidden="true">💬</span><span class="tab-label">Ask</span>
+        </button>
+      </nav>
+
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </main>
+
+    <!-- ──────────────────────────── stage rail ──────────────────────────── -->
+    <aside class="rail" aria-label="Prototype notes">
+      <div class="rail-block">
+        <p class="rail-kicker">Concept prototype</p>
+        <h2 class="rail-title">Taxfix Loop</h2>
+        <p class="rail-tagline">Feel ready before tax season arrives.</p>
+        <p class="rail-body">
+          Nine specialist agents over one shared blackboard, grounded in a synthetic
+          knowledge base. Every sentence on screen can be traced to a source.
+        </p>
+      </div>
+
+      <div class="rail-block">
+        <p class="rail-kicker">Try this</p>
+        <ol class="rail-steps">
+          <li><strong>Today</strong> → tap the laptop action, watch readiness move 62 → 78.</li>
+          <li><strong>AI Team</strong> → replay, then read the rejected joke and its rewrite.</li>
+          <li><strong>Ask</strong> → “Did I mess up?” then try “I’m scared I’ll get fined.”</li>
+        </ol>
+      </div>
+
+      <div class="rail-block rail-run" id="railRun"></div>
+
+      <div class="rail-block rail-legend">
+        <p class="rail-kicker">Honest labels</p>
+        <ul>
+          <li>Synthetic data — no real person, employer or amount.</li>
+          <li>Not tax advice and not an official Taxfix knowledge base.</li>
+          <li>Rules are demo-only; a real product needs verified sources.</li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+
+  <script src="data/run.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

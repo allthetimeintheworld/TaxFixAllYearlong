@@ -1,0 +1,25 @@
+{
+  "name": "taxfix-loop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Taxfix Loop — a calm, year-round tax preparation companion. Multi-agent prototype: 9 specialists over one shared blackboard, with a synthetic markdown knowledge base and a three-screen visual demo.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "demo": "node run-demo.mjs --print",
+    "run": "node run-demo.mjs",
+    "check": "node run-demo.mjs --check",
+    "live": "node run-demo.mjs --pace 400",
+    "serve": "node serve.mjs",
+    "pitch": "node run-demo.mjs --print && node serve.mjs"
+  },
+  "keywords": [
+    "taxfix",
+    "multi-agent",
+    "prototype",
+    "hackathon"
+  ],
+  "license": "MIT"
+}
