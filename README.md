@@ -226,9 +226,23 @@ This is a hackathon prototype and it says so, everywhere.
   *typically*, *depends on*.
 - **No outcome promises.** A deduction usually reduces taxable income; it does not
   return the purchase price. Eight banned patterns are enforced in code.
-- **Not a real product decision.** The visual language is *inspired by* publicly
-  visible Taxfix.de communication. It is not an official brand guideline, and final
-  wording would need to be checked against real design files.
+- **Not a real product decision.** The colours are sampled from the stylesheet
+  taxfix.com actually serves, so the palette is theirs rather than an approximation:
+
+  | | | |
+  |---|---|---|
+  | `#154618` | primary green | their `MuiButton-base` background |
+  | `#36893B` | interactive green | button hover |
+  | `#ADEE68` | accent lime | their `MuiButton-primary` background |
+  | `#CEF5A4` / `#ECFFC7` | lime tints | button ripple |
+  | `#FDF8F2` | page background | |
+  | `#EAE0D7` | sand borders | |
+  | `#0C0B0A` / `#9A9288` | text / secondary text | |
+
+  Their UI carries **no red and no blue**, so this prototype signals "needs you"
+  with amber rather than alarm red — which suits a product whose whole job is to
+  lower anxiety. The type is *not* theirs: they use ABC Rom, which is licensed, so
+  this falls back to a system stack. Still not an official brand guideline.
 - **The AI does not file anything.** The submit button is locked, and the approval
   checkbox is the user's.
 
