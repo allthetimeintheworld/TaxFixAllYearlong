@@ -2,9 +2,9 @@
 window.TAXFIX_RUN = {
   "meta": {
     "version": "1.0.0",
-    "runId": "run_20260917181412",
-    "generatedAt": "2026-09-17T18:14:12.756Z",
-    "durationMs": 97,
+    "runId": "run_20260917182126",
+    "generatedAt": "2026-09-17T18:21:26.475Z",
+    "durationMs": 68,
     "mode": "deterministic-grounded",
     "ragChunks": 94,
     "ragFiles": [
@@ -2245,7 +2245,7 @@ window.TAXFIX_RUN = {
       "blurb": "Defines who this is for and what \"better\" means for them.",
       "status": "complete",
       "summary": "Defined the target user and the success criteria",
-      "at": 20,
+      "at": 13,
       "flagged": false
     },
     {
@@ -2256,7 +2256,7 @@ window.TAXFIX_RUN = {
       "blurb": "Turns public trends into product opportunities, with confidence levels.",
       "status": "complete",
       "summary": "Found 8 recurring preparation opportunities",
-      "at": 52,
+      "at": 34,
       "flagged": false
     },
     {
@@ -2267,7 +2267,7 @@ window.TAXFIX_RUN = {
       "blurb": "Decides hierarchy, states and copy so the product reads in five seconds.",
       "status": "complete",
       "summary": "Designed the \"Tax Readiness\" dashboard and the AI Team view",
-      "at": 52,
+      "at": 34,
       "flagged": false
     },
     {
@@ -2278,7 +2278,7 @@ window.TAXFIX_RUN = {
       "blurb": "Turns a pile of paper into named, checkable records.",
       "status": "waiting",
       "summary": "Stopped instead of guessing on one field",
-      "at": 58,
+      "at": 38,
       "flagged": false
     },
     {
@@ -2289,7 +2289,7 @@ window.TAXFIX_RUN = {
       "blurb": "Keeps the list short enough to actually finish.",
       "status": "complete",
       "summary": "Created 4 next steps — and surfaced only one",
-      "at": 72,
+      "at": 47,
       "flagged": false
     },
     {
@@ -2300,7 +2300,7 @@ window.TAXFIX_RUN = {
       "blurb": "Asks nothing of you except the question you already have.",
       "status": "complete",
       "summary": "Answered \"I got married, bought a laptop, and started …\" in plain English",
-      "at": 85,
+      "at": 60,
       "flagged": false
     },
     {
@@ -2311,7 +2311,7 @@ window.TAXFIX_RUN = {
       "blurb": "Blocks anything that cannot be traced or is not yet confirmed.",
       "status": "waiting",
       "summary": "One conflicting answer found — asking instead of assuming",
-      "at": 88,
+      "at": 62,
       "flagged": true
     },
     {
@@ -2322,7 +2322,7 @@ window.TAXFIX_RUN = {
       "blurb": "Finds the promise the user will be hurt by, before they read it.",
       "status": "complete",
       "summary": "Re-attacked the rewrite: it survives",
-      "at": 96,
+      "at": 67,
       "flagged": false
     },
     {
@@ -2333,14 +2333,14 @@ window.TAXFIX_RUN = {
       "blurb": "Keeps the humour warm and the promises small.",
       "status": "complete",
       "summary": "Set the tone for 5 user questions",
-      "at": 96,
+      "at": 67,
       "flagged": false
     }
   ],
   "timeline": [
     {
       "seq": 1,
-      "at": 20,
+      "at": 13,
       "agentId": "product-expert",
       "agentName": "Product Expert",
       "emoji": "🎯",
@@ -2392,7 +2392,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 2,
-      "at": 52,
+      "at": 34,
       "agentId": "deep-research",
       "agentName": "Deep Research",
       "emoji": "🔎",
@@ -2486,7 +2486,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 3,
-      "at": 52,
+      "at": 34,
       "agentId": "frontend-design",
       "agentName": "Frontend Designer",
       "emoji": "🎨",
@@ -2548,7 +2548,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 4,
-      "at": 58,
+      "at": 38,
       "agentId": "document-detective",
       "agentName": "Document Detective",
       "emoji": "🔍",
@@ -2624,7 +2624,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 5,
-      "at": 58,
+      "at": 38,
       "agentId": "document-detective",
       "agentName": "Document Detective",
       "emoji": "🔍",
@@ -2656,7 +2656,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 6,
-      "at": 72,
+      "at": 47,
       "agentId": "tax-planner",
       "agentName": "Tax Planner",
       "emoji": "🗺️",
@@ -2734,7 +2734,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 7,
-      "at": 85,
+      "at": 60,
       "agentId": "eli5-specialist",
       "agentName": "ELI5 Specialist",
       "emoji": "💬",
@@ -2894,7 +2894,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 8,
-      "at": 86,
+      "at": 60,
       "agentId": "adversarial-fit",
       "agentName": "Adversarial Reviewer",
       "emoji": "⚔️",
@@ -2927,7 +2927,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 9,
-      "at": 86,
+      "at": 60,
       "agentId": "adversarial-fit",
       "agentName": "Adversarial Reviewer",
       "emoji": "⚔️",
@@ -2960,7 +2960,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 10,
-      "at": 86,
+      "at": 60,
       "agentId": "adversarial-fit",
       "agentName": "Adversarial Reviewer",
       "emoji": "⚔️",
@@ -3034,7 +3034,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 11,
-      "at": 88,
+      "at": 62,
       "agentId": "trust-check",
       "agentName": "Trust Check",
       "emoji": "🛡️",
@@ -3108,7 +3108,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 12,
-      "at": 88,
+      "at": 62,
       "agentId": "trust-check",
       "agentName": "Trust Check",
       "emoji": "🛡️",
@@ -3135,7 +3135,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 13,
-      "at": 95,
+      "at": 67,
       "agentId": "brand-guardian",
       "agentName": "Brand Guardian",
       "emoji": "🕊️",
@@ -3206,7 +3206,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 14,
-      "at": 96,
+      "at": 67,
       "agentId": "brand-guardian",
       "agentName": "Brand Guardian",
       "emoji": "🕊️",
@@ -3327,7 +3327,7 @@ window.TAXFIX_RUN = {
     },
     {
       "seq": 15,
-      "at": 96,
+      "at": 67,
       "agentId": "adversarial-fit",
       "agentName": "Adversarial Reviewer",
       "emoji": "⚔️",
@@ -3357,7 +3357,7 @@ window.TAXFIX_RUN = {
   "telemetry": [
     {
       "name": "session_started",
-      "at": 0,
+      "at": 1,
       "payload": {
         "ragChunks": 94,
         "agents": 9
@@ -3365,35 +3365,35 @@ window.TAXFIX_RUN = {
     },
     {
       "name": "goals_defined",
-      "at": 21,
+      "at": 14,
       "payload": {
         "priority": "Recurring tax readiness, not only annual filing"
       }
     },
     {
       "name": "research_cards_created",
-      "at": 52,
+      "at": 34,
       "payload": {
         "count": 8
       }
     },
     {
       "name": "document_saved",
-      "at": 58,
+      "at": 38,
       "payload": {
         "count": 5
       }
     },
     {
       "name": "monthly_checkin_started",
-      "at": 72,
+      "at": 47,
       "payload": {
         "streak": 2
       }
     },
     {
       "name": "next_action_completed",
-      "at": 72,
+      "at": 47,
       "payload": {
         "task": "task_laptop_share",
         "pending": true
@@ -3401,21 +3401,21 @@ window.TAXFIX_RUN = {
     },
     {
       "name": "tip_opened",
-      "at": 85,
+      "at": 59,
       "payload": {
         "card": "target_group_trends.md#multiple-income-streams-are-now-normal"
       }
     },
     {
       "name": "adversarial_rejection",
-      "at": 86,
+      "at": 60,
       "payload": {
         "count": 2
       }
     },
     {
       "name": "confidence_recorded",
-      "at": 88,
+      "at": 62,
       "payload": {
         "before": 2,
         "after": 2
@@ -3423,14 +3423,14 @@ window.TAXFIX_RUN = {
     },
     {
       "name": "tip_saved",
-      "at": 95,
+      "at": 67,
       "payload": {
         "card": "home-office"
       }
     },
     {
       "name": "session_completed",
-      "at": 100,
+      "at": 70,
       "payload": {
         "readiness": 78
       }

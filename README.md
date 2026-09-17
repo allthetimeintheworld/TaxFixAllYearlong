@@ -16,22 +16,45 @@ blocked rather than softened.
 ## Quick start
 
 ```bash
+make
+```
+
+That is the whole thing. It runs the agent team, starts the server, and opens
+`http://127.0.0.1:5173` in your browser. Stop it with `make stop`.
+
+No install. No dependencies. Node 18+ and `make`.
+
+```
+  Taxfix Loop is running at http://127.0.0.1:5173
+  Deep links:  /?replay=1   /?answer=scared   /?repair=mostly-freelance
+  Stop with:   make stop
+```
+
+| Command | What it does |
+|---|---|
+| `make` | **Run everything and open the browser** — the single command |
+| `make check` | Run the **28 acceptance checks** (exits non-zero on failure) |
+| `make live` | Re-run the team, paced at 400 ms per step, so you can watch it think |
+| `make transcript` | Print the run as a readable timeline |
+| `make data` | Re-run the agent team and rewrite `web/data/` |
+| `make stop` | Stop the background server |
+| `make clean` | Remove generated data and the server log |
+| `make PORT=8080` | Run on a different port |
+| `make help` | List every command |
+
+`make` is idempotent — running it again reuses the server already on the port
+rather than failing.
+
+### Without make
+
+```bash
 node run-demo.mjs          # run the agent team, write web/data/
 node serve.mjs             # → http://127.0.0.1:5173
 ```
 
-No install. No dependencies. Node 18+.
-
 You can also just open `web/index.html` directly — the run data is written as
 `web/data/run.js` (a `window` assignment, not a fetch), so there is no CORS problem
-and no server required.
-
-| Command | What it does |
-|---|---|
-| `npm run demo` | Run the team and print a readable transcript |
-| `npm run live` | Same, paced at 400 ms per step, for watching it think |
-| `npm run check` | Run the **28 acceptance checks** (`node run-demo.mjs --check`) |
-| `npm run serve` | Serve `web/` at `http://127.0.0.1:5173` |
+and no server required. The `npm run …` scripts mirror the make targets.
 
 ### Presenting shortcuts
 
@@ -236,6 +259,7 @@ point.
 ## Layout
 
 ```
+Makefile                     single-command launch: `make`
 run-demo.mjs                 CLI: run the team, write web/data/, --check, --pace
 serve.mjs                    zero-dependency static server
 package.json
